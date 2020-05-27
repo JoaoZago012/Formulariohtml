@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <title>Meu Formulário Personalizado</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+     
+  </head>
+<body bgcolor="blueocean">
+  <div id="area">
+    <form id="formulario" autocomplete="off">
+      <fieldset>
+        <legend> <h2> Formulário</h2> </legend> 
+      <h4>  <label>Nome: </label><input class="campo_nome" type="text" required minlength="3" placeholder="Digite seu nome aqui."><br>
+        <label>Email: </label><input class="campo_email" type="text" required placeholder="Digite seu email aqui."><br>
+        <div>
+        <label for="campoTelefone">Telefone: </label>
+        <input type="text" id="campoTelefone" placeholder="(00) 00000-0000" required minlength="15" maxlength="15" />    
+</div>
+        
+        <div>
+        <label for="cpf">CPF: </label>
+  <input type="text" name="cpf" id="cpf" required minlength="11" maxlength="11" placeholder="00000000000" />    
+</div>
+        
+                <div>
+        <label for="idade">Data de Nascimento: </label>
+  <input type="date" name="idade" id="idade" min="01/01/1940" max="27/05/2020" required>
+</div>
+        
+<div>
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="endereco" id="endereco" required placeholder="Rua das Coisas, n° 11"> 
+        </div>
+
+        <div>
+        <label for="cep">CEP: </label>
+        <input type="text" name="cep" id="cep" required placeholder="00000-000">        
+        </div>
+
+        <div> 
+                <label for="estado">Estado:</label>
+                <select name="estados" required>
+                        <option value="---">Escolha um Estado.</option>
+                        <option value="acre">Acre (AC)</option>
+                        <option value="alagoas">Alagoas (AL)</option>
+                        <option value="amapa">Amapá (AP)</option>
+                        <option value="amazonas">Amazonas (AM)</option>
+                        <option value="bahia">Bahia (BA)</option>
+                        <option value="ceara">Ceará (CE)</option>
+                        <option value="distrito_federal"> Distrito Federal (DF)</option>
+                        <option value="espirito_santo"> Espírito Santo (ES)</option>
+                        <option value="goias">Goiás (GO) </option>
+                        <option value="maranhao">Maranhão (MA)</option>
+                        <option value="matogrosso">Mato Grosso (MT)</option>
+                        <option value="matogrossodosul">Mato Grosso do Sul (MS)</option>
+                        <option value="minasgerais">Minas Gerais (MG)</option>
+                        <option value="para">Pará (PA)</option>
+                        <option value="paraiba">Paraíba (PB)</option>
+                        <option value="pernambuco">Pernambuco (PE) </option>
+                        <option value="piaui">Piauí (PI) </option>
+                        <option value="riodejaneiro">Rio de Janeiro (RJ)</option>
+                        <option value="riograndedonorte">Rio Grande do Norte (RN) </option>
+                        <option value="riograndedosul">Rio Grande do Sul (RS) </option>
+                        <option value="rondonia">Rondônia (RO) </option>
+                        <option value="santacatarina">Santa Catarina (SC)</option>
+                        <option value="saopaulo">São Paulo (SP) </option>
+                        <option value="sergipe">Sergipe (SE) </option>
+                        <option value="tocantins">Tocantins (TO) </option>
+                </select>
+                
+<div>
+        <label for="cidade">Cidade:</label>
+        <input type="text" name="cidade" id="cidade" required placeholder="Escolha sua Cidade."> 
+        </div> </h4>
+
+<div>
+     <h3>          <input type="checkbox" id="termos" name="termos">
+        <label for="termos"> Eu aceito os termos de uso.</label> </h3>
+</form>
+
+        <!-- Incluir o jQuery -->
+        <script>
+                src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+        </script>
+
+<!-- Incluindo o Mask -->
+        <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js0">          
+        </script>
+<!-- Incluindo o plugin validate (jQuery) -->
+        <script 
+                src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js">
+        </script>
+
+        <!-- Trabalhando com nosso próprio script -->
+        <script type="text/javascript" src="script.js">
+                $("#Telefone").mask("(00) 00000-0000");
+        </script>
+
+        <Br>        <input class="btn_submit" type="submit" value="Enviar">
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
